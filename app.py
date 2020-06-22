@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 notepad = Flask(__name__)
 
-@app.route('/')
+@notepad.route('/')
 def index():
     return render_template('index.html', name='Mike')
 
